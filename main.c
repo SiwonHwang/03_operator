@@ -5,17 +5,13 @@
 
 int main(int argc, char *argv[]) {
 
-	int i;
-	int hour, min, sec;
+	int in1, in2, in3;
 	
-	printf("input the second : ");
-	scanf("%i", &i);
+	printf("input 3 integers : ");
+	scanf("%d %d %d", &in1, &in2, &in3);
 	
-	hour = i/3600;
-	min = (i%3600)/60;
-	sec = (i%3600)%60;
-		
-	printf("the time for %i second is %i : %i : %i", i, hour, min, sec);
+	
+	printf("average of %i %i %i is %f\n", in1, in2, in3, (double)(in1+in2+in3)/3);
 	
 	return 0;
 }
